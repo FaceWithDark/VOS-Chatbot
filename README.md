@@ -17,7 +17,7 @@ An osu!taiko chatbot created mainly for VOS website.
 
 ## Related Projects
 
-- [VOS](https://github.com/FaceWithDark/VOS-Chatbot) - A dedicated repository for VOS website development.
+- [VOS](https://github.com/FaceWithDark/VOS) - A dedicated repository for VOS website development.
 
 ## Credits
 
