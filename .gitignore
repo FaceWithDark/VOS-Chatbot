@@ -4,6 +4,9 @@
 # === General recommended ignore files === #
 # ======================================== #
 
+# Binaries directory except automation scripts
+bin/
+!bin/*.sh
 
 # MacOS-specific CRUD
 .DS_Store
@@ -49,7 +52,7 @@ atlassian-ide-plugin.xml
 .dropbox*
 
 # Environment files
-.env*
+*.env*
 !.env.example
 
 # Docker building files
