@@ -1,11 +1,9 @@
-# Composer files
-vendor/
 
-# Database files
-database/
 
-# Server static web configuration
-*.htaccess
+# ======================================== #
+# === General recommended ignore files === #
+# ======================================== #
+
 
 # MacOS-specific CRUD
 .DS_Store
@@ -13,70 +11,117 @@ Thumbs.db
 Icon*
 desktop.ini
 
-# Ignore IDE/editor specific files
+# IDE generated files
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# File-based project format
+*.iws
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
 # Dropbox Linux/MacOS files
 .dropbox*
 
-# Sus information except the template one
+# Environment files
 .env*
 !.env.example
-
-# Website assets
-assets/
 
 # Docker building files
 docker-compose.yml
 Dockerfile
 .dockerignore
 
-# Markdown files
-*.md
 
-# Except some of these markdown files
-!README.md
+# ============================================= #
+# === C++ recommended ignore files (GitHub) === #
+# ============================================= #
 
 
-#               #
-#   C++ Stuff   #
-#               #
+# Prerequisites
+*.d
 
-# CMake specific files
-cpp/CMakeLists.txt.user
-cpp/CMakeCache.txt
-cpp/CMakeFiles/
-cpp/CMakeScripts/
-cpp/Testing/
-cpp/Makefile
-cpp/cmake_install.cmake
-cpp/install_manifest.txt
-cpp/compile_commands.json
-cpp/CTestTestfile.cmake
-cpp/_deps/
-cpp/CMakeUserPresets.json
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# Build output directory
-cpp/build/
+# Precompiled Headers
+*.gch
+*.pch
 
-# Install directory
-cpp/install/
+# Linker files
+*.ilk
 
-# Visual Studio specific files
-cpp/.vs/
-cpp/Debug/
-cpp/Release/
-cpp/x64/
-cpp/x86/
-cpp/bld/
-cpp/Bin/
-cpp/Obj/
+# Debugger Files
+*.pdb
 
-# .txt files
-*.txt
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# Except some of these text files
-!CMakeLists.txt
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug information files
+*.dwo
+
+
+# =============================================== #
+# === CMake recommended ignore files (GitHub) === #
+# =============================================== #
+
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+# For Jetbrain CLion
+cmake-build-*/
