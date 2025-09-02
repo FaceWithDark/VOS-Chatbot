@@ -5,7 +5,7 @@
 # ======================================== #
 
 # Binaries directory except automation scripts
-bin/
+bin/*
 !bin/*.sh
 
 # MacOS-specific CRUD
